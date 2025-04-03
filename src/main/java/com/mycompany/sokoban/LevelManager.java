@@ -10,12 +10,12 @@ import java.io.IOException;
  */
 public class LevelManager {
     private char [][] nivel ={
-        {'#', '#', '#'},
-        {'#', '.', '#'},
-        {'#', ' ', '#', '#', '#'},
-        {'#', '*', '@', ' ', '#'},
+        {'#', '#', '#', '#'},
+        {'#',' ' ,'.', '#'},
+        {'#', ' ',' ', '#', '#', '#'},
+        {'#', '*', '@', ' ',' ', '#'},
         {'#', ' ', ' ', '$', ' ', '#'},
-        {'#', ' ', '#', '#', '#'},
+        {'#', ' ',' ', '#', '#', '#'},
         {'#', '#', '#', '#'}
     };
     
@@ -35,10 +35,21 @@ public class LevelManager {
     /**
      * @return the nivel
      */
-    public  char[][] getNivel() {
+    public char[][] getNivel() {
         return nivel;
     }
-    
+
+    /**
+     * @param nivel the nivel to set
+     */
+    public void setNivel(char[][] nivel) {
+        this.nivel = nivel;
+    }
+
+    /**
+     * @return the nivel
+     */
+   
     
     
 }

@@ -5,6 +5,20 @@ import java.awt.event.KeyListener;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
+/*
+    @: Representa al jugador (el "sokoban"). Es el personaje que mueve las cajas.
+
+#: Representa una pared o bloque. Es una barrera que el jugador no puede atravesar.
+
+$: Representa una caja que debe ser movida a una ubicación específica (un objetivo).
+
+.: Representa un objetivo vacío. Es el lugar donde debe ir una caja para completar el nivel.
+
+*: Representa una caja en un objetivo (una caja colocada correctamente).
+
+(espacio en blanco): Representa un área vacía donde el jugador puede moverse libremente.
+*/
+
 
 public class Sokoban {
 
@@ -24,6 +38,7 @@ public class Sokoban {
         frame.add(new Pantalla());
         
         leerTeclado();
+        
     }
 
     private void leerTeclado() {
